@@ -1,4 +1,4 @@
-# Data Structures & Algorithms (DSA) — Pattern-Wise Mastery
+Data Structures & Algorithms (DSA) — Pattern-Wise Mastery
 
 ## 🎯 The Mission
 To achieve absolute mastery over Data Structures and Algorithms by focusing on **patterns, not execution volume**. Memorizing 1,000 LeetCode questions is a loser's game. Master the underlying 15–20 core patterns, and you can solve any problem thrown at you.
