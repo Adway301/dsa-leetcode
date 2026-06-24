@@ -19,15 +19,12 @@ public class DesignLL {
         }
 
         public int get(int index) {
-            if (index < 0) {
-                return -1;
-            }
-            if (index >= size) {
+            if (index<0 || index>=size) {
                 return -1;
             }
             Node curr = head;
 
-            for (int i = 0; i <= index; i++) {
+            for (int i = 0; i <= index; i++) {       //item can present at last index also
                 curr = curr.next;
             }
             return curr.val;
