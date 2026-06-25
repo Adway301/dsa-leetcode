@@ -39,14 +39,7 @@ public class LinkedListCycleII {
         b.next=c;
         c.next=d;
         d.next=b;
-        System.out.println(cycle(a));
+        Node cycleStart=cycle(a);
+        System.out.println(cycleStart.val);
     }
-    // public static void print(Node head){
-    //     Node curr = head;
-    //     while (curr!=null) {
-    //         System.out.print(curr.val+"->");
-    //         curr=curr.next;
-    //     }
-    //     System.out.println("end");
-    // }
 }
