@@ -29,6 +29,29 @@ public class IntersectionOfLL {
         }
         return null;
     }
+
+
+        // optimal method two pointer
+    public static Node intersection(Node headA, Node headB){
+        Node currA = headA;
+        Node currB = headB;
+        if (currA == null || currB== null) {
+            return null;
+        }
+        while (currA!=currB) {
+            if (currA==null) {
+                currA=headB;
+            }else{
+                currA=currA.next;
+            }
+            if (currB==null) {
+                currB=headA;
+            }else{
+                currB=currB.next;
+            }
+        }
+        return currA;
+    }
 public static void main(String[] args) {  
     Node a1 = new Node(1); 
     Node a2 = new Node(2); 
@@ -45,7 +68,7 @@ public static void main(String[] args) {
     b1.next=b2;
     b2.next=b3;
     b3.next=c1;
-    Node res=Intersection(a1, b1);
+    Node res=intersection(a1, b1);
     System.out.println(res.val);
 }
 }
