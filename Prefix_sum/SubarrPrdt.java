@@ -1,13 +1,10 @@
-// package Sliding_Window;
-
-public class SubarrayProduct {
+//713. Subarray Product Less Than K
+package Prefix_sum;
+public class SubarrPrdt {
     public static void main(String[] args) {
-        int[] nums = {10,5,2,6};
-        int k=100;
-        int res = numSubarrayProductLessThanK(nums,k);
-        System.out.println(res);
+
     }
-    public static int numSubarrayProductLessThanK(int[] nums, int k) {
+    public int numSubarrayProductLessThanK(int[] nums, int k) {
         int count =0 ;
         long product=1;
         int i =0;
