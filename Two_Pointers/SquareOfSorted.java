@@ -1,0 +1,26 @@
+// 977 Square of sorted array
+import java.util.*;
+public class SquareOfSorted {
+    public static void main(String[] args){
+        int[] nums= {-4,-1,0,3,10};
+        System.out.println(Arrays.toString(fun(nums)));
+    }
+    public static int[] fun(int[] nums){
+        int k = nums.length-1;
+        int res[] = new int[nums.length];
+        int i =0;
+        int j=nums.length-1;
+        while (i<=j) {
+            if (Math.abs(nums[i])<Math.abs(nums[j])) {
+                res[k]=nums[j]*nums[j];
+                j--;
+            }
+            else {
+                res[k] = nums[i]*nums[i];
+                i++;
+            }
+            k--;
+        }
+        return res;
+    }
+}
